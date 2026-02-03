@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Projects - Personal Website</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../resources/css/style.css" />
+    <link rel="icon" type="image/x-icon" href="../resources/img/favicon.ico" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="home.html">Alex's Website</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="hobbies.html">Hobbies</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="projects.html">Projects</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+      <div class="text-center mb-5">
+        <h1 class="display-4 fw-bold">My Projects</h1>
+        <p class="lead text-muted">A showcase of my recent work and accomplishments</p>
+      </div>
+
+      <!-- Projects Accordion -->
+      <div class="accordion" id="projectsAccordion">
+        
+        <!-- Project 1 -->
+        <div class="accordion-item mb-3">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#projectOne"
+              aria-expanded="true"
+              aria-controls="projectOne"
+            >
+              Going Viral
+            </button>
+          </h2>
+          <div
+            id="projectOne"
+            class="accordion-collapse collapse show"
+            data-bs-parent="#projectsAccordion"
+          >
+            <div class="accordion-body">
+              <div class="row g-4 align-items-center">
+                <div class="col-md-4">
+                  <img
+                    src="../resources/img/going_viral.png"
+                    alt="Going Viral"
+                    class="img-fluid rounded shadow"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <h4 class="mb-3">Hackathon Coding Project</h4>
+                  <p>
+                    Devleoped a simple bullet-hell style game for HackCU 11 using PyGame, an engine we taught ourselves during development. Includes the structure for a "world map" as well as rendering of local rooms.
+                  </p>
+                  <p>
+                    <strong>Key Features:</strong>
+                  </p>
+                  <ul>
+                    <li>The germs move</li>
+                    <li>You can shoot the germs</li>
+                    <li>You move, too (forgot to mention that earlier)</li>
+                    <li>Mostly, you move and shoot germs</li>
+                  </ul>
+                  <p class="mb-0">
+                    <strong>Technologies:</strong>
+                    <span class="badge bg-primary ms-2">Python</span>
+                    <span class="badge bg-primary ms-2">PyGame</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="accordion-item mb-3">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#projectTwo"
+              aria-expanded="false"
+              aria-controls="projectTwo"
+            >
+              Personalized Desktop Setup
+            </button>
+          </h2>
+          <div
+            id="projectTwo"
+            class="accordion-collapse collapse"
+            data-bs-parent="#projectsAccordion"
+          >
+            <div class="accordion-body">
+              <div class="row g-4 align-items-center">
+                <div class="col-md-4">
+                  <img
+                    src="../resources/img/desktop_background.png"
+                    alt="Personalized Desktop Setup"
+                    class="img-fluid rounded shadow"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <h4 class="mb-3">Personalized Desktop Setup</h4>
+                  <p>
+                    Almost certainly not a programming project, but I'm still proud of how nice my desktop looks now. I played with Windows settings and registry editing a bunch (i.e. no icons on desktop, Windows bar hides unless scrolled across) to get it feeling pretty clean, and then used a software called Rainmeter to get it past the finish line. Now, instead of clicking on shortcuts, I just press the Windows key, type the name of the application into the search bar, and press enter. It's pretty sweet. All of my backgrounds are storyboard panels from Kiki's Delivery Service. 
+                  </p>
+                  <p>
+                    <strong>Key Achievements:</strong>
+                  </p>
+                  <ul>
+                    <li>Desktop is always permanently organized</li>
+                    <li>No more clutter</li>
+                    <li>Widgets add useful information while not being distracting</li>
+                    <li>Computer feels a lot nicer to use now</li>
+                  </ul>
+                  <p class="mb-0">
+                    <strong>Technologies:</strong>
+                    <span class="badge bg-success ms-2">Rainmeter</span>
+                    <span class="badge bg-success ms-2">Windows OS</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="accordion-item mb-3">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#projectThree"
+              aria-expanded="false"
+              aria-controls="projectThree"
+            >
+              Personal Website
+            </button>
+          </h2>
+          <div
+            id="projectThree"
+            class="accordion-collapse collapse"
+            data-bs-parent="#projectsAccordion"
+          >
+            <div class="accordion-body">
+              <div class="row g-4 align-items-center">
+                <div class="col-md-4">
+                  <img
+                    src="../resources/img/personal_website.png"
+                    alt="Personal Website"
+                    class="img-fluid rounded shadow"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <h4 class="mb-3">Personal Website</h4>
+                  <p>
+                    For assignment 3 of my Software Development class, I made a simple personal website. In fact, you are looking at it right now.
+                  </p>
+                  <p>
+                    <strong>Key Features:</strong>
+                  </p>
+                  <ul>
+                    <li>Modern web design technologies</li>
+                    <li>HTML <em>and</em> CSS</li>
+                    <li>Responsible use of Gen AI models</li>
+                    <li>Conveyance of mostly-accurate information about Alex</li>
+                  </ul>
+                  <p class="mb-0">
+                    <strong>Technologies:</strong>
+                    <span class="badge bg-info ms-2">CSS</span>
+                    <span class="badge bg-info ms-2">HTML</span>
+                    <span class="badge bg-info ms-2">Bootstrap</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+      <div class="container">
+        <p class="mb-2">Connect with me:</p>
+        <div class="d-flex justify-content-center gap-3">
+          <a href="https://github.com/OhNoDolphinado" class="text-white" target="_blank">
+            <i class="fab fa-github fa-2x"></i>
+          </a>
+          <a href="https://linkedin.com/in/alex-class" class="text-white" target="_blank">
+            <i class="fab fa-linkedin fa-2x"></i>
+          </a>
+          <a href="alex.class@colorado.edu" class="text-white">
+            <i class="fas fa-envelope fa-2x"></i>
+          </a>
+        </div>
+        <p class="mt-3 mb-0 h6">&copy; 2026 Alex Class. All rights reserved.</p>
+        <p class="mt-3 mb-0 h6">The Gen AI model <em>Claude</em> was used in part to generate this web page.</p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
